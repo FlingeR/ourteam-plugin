@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Agent
+
+# Model Form Field configuration
+form: $/fencus/ourteam/models/agent/fields.yaml
+
+# Model Class name
+modelClass: Fencus\OurTeam\Models\Agent
+
+# Default redirect location
+defaultRedirect: fencus/ourteam/agents
+
+# Create page
+create:
+    title: Create Agent
+    redirect: fencus/ourteam/agents/update/:id
+    redirectClose: fencus/ourteam/agents
+
+# Update page
+update:
+    title: Edit Agent
+    redirect: fencus/ourteam/agents
+    redirectClose: fencus/ourteam/agents
+
+# Preview page
+preview:
+    title: Preview Agent

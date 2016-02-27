@@ -1,0 +1,46 @@
+div.ourteam-agent-container {
+    margin-bottom: 20px;
+	background-color: #f8f8f8;
+	border: 2px solid transparent;
+    border-color: #d35714;
+}
+
+div.ourteam-agent-container > table > tbody > tr > td.ourteam-agent-content{
+	padding: 15px 15px 15px 15px;
+}
+
+div.ourteam-agent-container > table > tbody > tr > td > div.ourteam-agent-avatar {
+	border-style: solid;
+    border-width: 0px 2px 2px 0px;
+    border-color: #d35714;
+}
+	
+div.ourteam-agent-container > table > tbody > tr > td.ourteam-agent-header {
+	padding: 15px 15px 15px 15px;
+	border-bottom: 2px solid transparent;
+	box-sizing: border-box;
+}
+
+div.ourteam-agent-container > table > tbody > tr > td.ourteam-agent-header > h1 {
+	color: #d35714;
+}
+
+div.ourteam-agent-container > table > tbody > tr > td.ourteam-agent-header > p {
+	color: #d35714;
+}
+
+div.ourteam-container{
+	
+}
+
+div.ourteam-panel{
+    margin: 20px;
+	background-color: #f8f8f8;
+	border: 2px solid transparent;
+    border-color: #d35714;
+    position: relative;
+    float:left;
+    width: 204px;
+    max-height: 300px;
+    min-height: 300px;
+}

@@ -1,0 +1,35 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    image:
+        label: Avatar
+        type: fileupload
+        mode: image
+        imageHeight: 200
+        imageWidth: 200
+        span: left
+    public:
+        label: Public Profile
+        default: true
+        type: switch
+        span: left
+        
+    name:
+        label: Name
+        span: left
+    surname:
+        label: Surname
+        span: right
+        
+    email:
+        label: E-Mail
+        span: left
+        
+    description_short:
+        label: Short Description
+        
+    description:
+        label: Description
+        type: richeditor

@@ -1,0 +1,29 @@
+<div class="ourteam-agent-container">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<div class="ourteam-agent-avatar">
+						<img
+					        data-src="{{ __SELF__.agent.image.filename }}"
+					        src="{{ __SELF__.agent.image.path }}"
+							alt="{{ __SELF__.agent.slug }}"
+							style="max-width: 200px; max-height:200px;"	
+						/>
+					</div>
+				</td>
+				<td valign="top" class="ourteam-agent-header">
+					<h1>{{ __SELF__.agent.name }} {{ __SELF__.agent.surname }}</h1>
+					<p>{{ __SELF__.agent.description_short }}</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td class="ourteam-agent-content">
+					 {{ __SELF__.agent.description|raw }}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,16 @@
+<div class="ourteam-container">
+{% for agent in __SELF__.agents %}
+	<div class="ourteam-panel">
+		<img
+			data-src="{{ agent.image.filename }}"
+			src="{{ agent.image.path }}"
+			alt="{{ agent.slug }}"
+			style="max-width: 200px; max-height:200px;"		
+		/>
+		<div>
+		<p class="text-center"><a href="{{ agent.url }}"><b>{{ agent.name }} {{ agent.surname }}</b></a></p>
+		<p>{{ agent.description_short }}</p>
+		</div>
+	</div>
+{% endfor %}
+</div>

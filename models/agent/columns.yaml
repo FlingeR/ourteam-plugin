@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    full_name:
+        label: Full Name
+        select: concat(name, ' ', surname)
+        
+    email:
+        label: E-Mail
