@@ -10,6 +10,7 @@ fields:
         imageHeight: 200
         imageWidth: 200
         span: left
+
     public:
         label: Public Profile
         default: true
@@ -19,9 +20,14 @@ fields:
     name:
         label: Name
         span: left
+
     surname:
         label: Surname
         span: right
+        
+    position:
+        label: Position
+        span: left
         
     email:
         label: E-Mail

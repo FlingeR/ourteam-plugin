@@ -42,15 +42,17 @@ class Agent extends ComponentBase
     
     public function onRun()
     {
-    	try
+    	$this->addCss('/plugins/fencus/ourteam/assets/css/ourteam.css');
+    	$this->ourTeamPage = $this->property('ourTeamPage');
+    	$slug = $this->property('slug');
+    	$this->agent = AgentModel::where('slug', $slug)->where('public','=',1)->first();
+    	if(!$this->agent)
     	{
-    		$this->addCss('/plugins/fencus/ourteam/assets/css/ourteam.css');
-    		$this->ourTeamPage = $this->property('ourTeamPage');
-    		$slug = $this->property('slug');
-    		$this->agent = AgentModel::where('slug', $slug)->firstOrFail();
-    	}
-    	catch(Exception $ex){
     		return redirect('/');
+    	}
+    	if($this->agent->image)
+    	{
+    		$this->agent->avatar = $this->agent->image->getThumb(200,200,['mode' => 'crop']);
     	}
     }
     

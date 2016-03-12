@@ -9,7 +9,6 @@ use System\Classes\PluginBase;
 class Plugin extends PluginBase
 {
 
-	public $require = ['Fencus.HierarchyRelation'];
     /**
      * Returns information about this plugin.
      *

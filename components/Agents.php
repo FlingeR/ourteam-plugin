@@ -38,10 +38,14 @@ class Agents extends ComponentBase
     {
     	$this->addCss('/plugins/fencus/ourteam/assets/css/ourteam.css');
     	$this->agentPage = $this->property('agentPage');
-    	$this->agents = AgentModel::all();
+    	$this->agents = AgentModel::where('public','=',1)->get();
     	foreach($this->agents as $agent)
     	{
     		$agent->setUrl($this->agentPage, $this->controller);
+    		if($agent->image)
+    		{
+    			$agent->avatar = $agent->image->getThumb(200,200,['type' => 'crop']);
+    		}
     	}
     }
 

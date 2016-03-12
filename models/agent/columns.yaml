@@ -6,6 +6,16 @@ columns:
     full_name:
         label: Full Name
         select: concat(name, ' ', surname)
+        searchable: true
+        
+    position:
+        label: Position
+        searchable: true
         
     email:
         label: E-Mail
+        searchable: true
+        
+    public:
+        label: Public Profile
+        type: switch
